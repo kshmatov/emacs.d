@@ -10,19 +10,19 @@
 ;;      custom-file (expand-file-name "custom.el" user-emacs-directory))
 ;; (load custom-file :noerror)
 
-(require 'package)
-(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
-(add-to-list 'package-archives '("gnu" . "https://elpa.gnu.org/packages/"))
-(package-initialize)
-(unless (package-installed-p 'use-package)
-  (package-refresh-contents)
-  (package-install 'use-package))
+;(require 'package)
+;(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
+;(add-to-list 'package-archives '("gnu" . "https://elpa.gnu.org/packages/"))
+;(package-initialize)
+;(unless (package-installed-p 'use-package)
+;  (package-refresh-contents)
+;  (package-install 'use-package))
 
 ;; Bootstrap 'use-package'
 
-(require 'use-package)
+;;(require 'use-package)
 ; ensures that each package that is configured using ~use-package~ is installed
-(setq use-package-always-ensure t) 
+;;(setq use-package-always-ensure t) 
 
 
 ;; Prefer loading newest compiled .el file
